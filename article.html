@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <link rel="stylesheet" href="./article.css">
+
+
+    <title>Medium Alike</title>
+</head>
+<body>
+
+    <div class="header-logo">
+        <div class="contentwidth logo-div">
+            <p class="logo-p contentwidth">
+                Medium Alike
+            </p>
+        </div>
+    </div>
+
+    <div class="arrow-left-div-external">
+        <div class="arrow-left-div-internal contentwidth">
+            <img id="arrow-left-img" src="./img/Left.png" alt="left-arrow" onclick="backToIndex()">
+        </div>
+    </div>
+
+    <div class="one-news-fill-frame">
+        <div class="opened-article">
+
+            <!-- opened-article-meta-info (author / publish date / min read / member only) -->
+            <div class="opened-article-meta-info-div contentwidth">
+                
+                <div class="meta-div">
+                    <img id="author-pic" src="./img/person.png" alt="author-pic">
+                    <div id="author-name-pubdate-minutesread">
+                        <p id="author-name">{{% author name %}}</p>
+                        <div id="pubdate-minutesread-member-only-div">
+                            <span class="class-pubdate-minutesread-member-only" id="pubDate">{{% publication date %}}</span>
+                            <span class="delimeter">·</span>
+                            <span class="class-pubdate-minutesread-member-only">12 min read</span>
+                            <span class="delimeter">·</span>
+                            <span class="class-pubdate-minutesread-member-only">Member-only</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="socials-div">
+                    <img src="./img/LinkedIn.png" alt="linkedin-logo">
+                    <img src="./img/Facebook Circled.png" alt="facebook-logo">
+                    <img src="./img/Twitter.png" alt="twitter-logo">
+                </div>
+            </div>
+
+            <!-- title and summary of article -->
+            <div class="title-summary-div contentwidth">
+                <p id="selected-article-title">
+                    {{% SELECTED ARTICLE TITLE %}}
+                </p>
+                <p class="selected-article-body-txt contentwidth" id="selected-article-brief">
+                    {{% SELECTED ARTICLE BRIEF %}}
+                </p>
+            </div>
+
+            <!-- pic -->
+            <div id="opened-article-div-for-pic">
+                <img id="opened-article-pic" alt="pic-of-the-article">
+            </div>
+            
+
+            <!-- aricle body -->
+            <div class="article-body-div contentwidth">
+                <p id="subheader contentwidth">Subheader</p>
+                <p class="selected-article-body-txt contentwidth" id="selected-article-body">
+                    {{% SELECTED ARTICLE BODY %}}
+                </p>
+            </div>
+
+            <!-- likes and comments -->
+            <div class="likes-comments-bookmarks-div contentwidth">
+                <div class="left-div-at-likes-comments-div">
+                    <div id="heart-div">
+                        <img id="heart-pic" src="./img/Heart.png" alt="heart-pic">
+                        <p class="counter-p">180</p>
+                    </div>
+                    <div id="bubble-div">
+                        <img id="bubble-pic" src="./img/Speech Bubble.png" alt="bubble-pic">
+                        <p class="counter-p">12</p>
+                    </div>
+                </div>
+                <div class="right-div-at-likes-comments-div">
+                    <img id="bookmark-pic" src="./img/Bookmark.png" alt="bookmark-pic">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="contentwidth">
+            <div class="credit-div">
+                <p class="credit-p">Credits: photos from Unsplash.com, icons from Icons8, graphics from craftwork.design.</p>
+            </div>
+            <div class="signature-div">
+                <p class="signature-p">Made with ✨❤️ at nFactorial in 2022.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="article.js"></script>
+</body>
+</html>
